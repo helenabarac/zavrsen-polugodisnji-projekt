@@ -1,0 +1,275 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        /* Hero sekcija */
+        .hero {
+            background-color: #5f9ea0;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            font-family: "Bitstream Vera Serif Bold";
+        }
+        @font-face {
+            font-family: "Bitstream Vera Serif Bold";
+            src: url("https://mdn.github.io/shared-assets/fonts/VeraSeBd.ttf");
+        }
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 20px;
+            max-width: 600px;  /* sirina koju zauzimja tekst ispod naslova */
+            margin: 0 auto;
+        }
+
+
+        /* Navigacija */
+        nav {
+            background-color: #2c3e50;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            font-family: "Bitstream Vera Serif Bold";
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;  /* nema tockica ispred nabrajanja koju lista inace ima  */
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;   /* nema linije ispod teksta koju link inace ima  */
+            padding: 10px 20px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #34495e;  /* kad pređes misem preko neke rijeci u NAVIGACIJI pozadina okolo rijeci mijenja boju  */
+        }
+
+
+        /* Glavni kontejner */
+        .container {
+            display: flex;
+            max-width: 1300px;    /* sirina koju zauzimju članci i kategorije*/
+            margin: 40px auto;
+            padding: 0 20px;
+            gap: 40px;            /* razmak između članaka i kategorija */
+        }
+
+
+        /* MAIN ČLANCI */
+        main {
+            flex: 3;                   /* kolicina ukupne sirine koju zauzimaju ČLANCI */
+            font-family: Open Sans;
+        }
+        /* članci */
+        .članak {                             /* cijeli dio "Web dizajn" i "Aplikacije" */
+            background-color: #f8f9fa;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+        }
+        .članak h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;            
+            font-size: 30px;
+            border-bottom: 3px solid #5f9ea0;
+            padding-bottom: 10px;
+        }
+        .članak-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;                    /* razmak između podnaslova u članku */
+        }
+        .tekst {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .tekst h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .tekst p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+
+        /* SIDEBAR KATEGORIJE */
+        aside {
+            flex: 1;
+            font-family: Times New Roman;
+        }
+        /* kategorije */
+        .sidebar-kategorija {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        }
+        .sidebar-kategorija h3 {
+            color: #5f9ea0;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        .sidebar-kategorija ul {
+            list-style: none;          /* nema tockica ispred nabrajanja koju lista inace ima  */
+        }
+        .sidebar-kategorija ul li {
+            padding: 8px 0;            
+            border-bottom: 1px solid #eee;
+        }
+        .sidebar-kategorija ul li:last-child {
+            border-bottom: none;         /* nema linije ispod zadnje rijeci u listi  */
+        }
+
+        .sidebar-kategorija a {
+            color: #2c3e50;
+            text-decoration: none;          /* nema linije ispod teksta koju link inace ima  */
+            
+        }
+        .sidebar-kategorija a:hover {
+            color: #5f9ea0;              /* kad pređes misem preko neke rijeci u LISTI SA STRANE rijec mijenja boju  */
+        }
+
+
+        /* Društvene mreže */
+        .drustvene-mreze {
+            background-color: cadetblue;;
+            padding: 30px;
+            text-align: center;
+            font-family: "Bitstream Vera Serif Bold";
+        }
+        .drustvene-mreze h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .social-icons a {
+            font-size: 30px;    /* veličina ikona od drustvenih mreza */
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);   /* ikone drustvenih mreza se malo povećaju kad misem prijeđes preko  */
+        }
+
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 30px 20px;
+            margin-top: 50px;
+            font-family: "Bitstream Vera Serif Bold";
+        }
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            max-width: 1300px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            gap: 30px;
+            text-align: center;
+        }
+        .footer-section {
+            flex: 1;
+            min-width: 200px;
+        }
+        .footer-section h3 {
+            margin-bottom: 15px;
+            color: #5f9ea0;
+        }
+        .footer-section ul {
+            list-style: none;          /* nema tockica ispred nabrajanja koju lista inace ima  */
+        }
+        .footer-section ul li {
+            margin-bottom: 8px;
+        }
+        .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;            /* nema linije ispod teksta koju link inace ima  */
+            transition: color 0.3s;           /* vrijeme podrebno da rijec promjeni boju */
+        }
+        .footer-section a:hover {
+            color: white;           /* kad pređes misem preko neke rijeci u LISTI rijec mijenja boju */
+        }
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid #34495e;
+        }
+
+        /* Responsive */
+        @media (max-width: 680px) {
+            .container {
+                flex-direction: column;
+            }
+            nav ul {
+                flex-direction: column;
+            }
+            .footer-content {
+                flex-direction: column;
+            }
+            .hero h1 {
+                font-size: 24px;
+            }
+            .hero p {
+                font-size: 16px;
+            }
+            .članak h2 {
+                font-size: 22px;
+            }
+            img{
+                width: 250px;
+            }
+        }
+        @media screen and (min-width: 681px) and (max-width: 1024px) {
+            .container {
+                flex-direction: column;
+                gap: 30px;
+            }
+            main {
+                flex: 1;
+            }
+            aside {
+                flex: 1;
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .sidebar-kategorija {
+                width: 48%; /* dvije kategorije jedna pored druge */
+            }
+            /* Manji naslovi za tablet */
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero p {
+                font-size: 18px;
+            }
+            .članak h2 {
+                font-size: 26px;
+            }
+            /* Footer malo kompaktniji */
+            .footer-content {
+                gap: 20px;
+            }
+        }
