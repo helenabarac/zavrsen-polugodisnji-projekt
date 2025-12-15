@@ -1,0 +1,1 @@
+# zavrsen-polugodisnji-projekt
